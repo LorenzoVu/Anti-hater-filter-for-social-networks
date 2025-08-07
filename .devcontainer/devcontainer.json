@@ -1,0 +1,22 @@
+{
+  "name": "Universal CUDA DevContainer",
+
+  // immagine di base Dev Containers (Ubuntu 22.04 + toolchain)
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  // espone tutte le GPU al container
+  "runArgs": ["--gpus", "all"],
+
+  // abilita driver utente NVIDIA, CUDA 12.4 e cuDNN
+  "features": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true
+    }
+  },
+
+  // (facoltativo) installa TensorFlow-GPU all’avvio
+  "postCreateCommand": "pip install tensorflow==2.15",
+
+  // l’utente predefinito dell’immagine è “vscode”
+  "remoteUser": "vscode"
+}
