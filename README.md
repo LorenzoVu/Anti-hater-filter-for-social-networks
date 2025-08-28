@@ -1,4 +1,3 @@
-```markdown
 # Anti-Hater Filter for Social Networks
 
 ## Project Overview
@@ -75,4 +74,3 @@ The model achieves strong performance on frequent toxicity classes and competiti
 - **Customizable thresholds** to adapt to different moderation needs
 
 The model's strong ranking ability (high PR-AUC per class) ensures good operating points exist, and threshold tuning effectively rebalances the error profile according to policy needs.
-```
